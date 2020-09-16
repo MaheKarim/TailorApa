@@ -23,3 +23,7 @@ Route::group(['prefix' => 'admin'], function () {
 
 
 Route::post('/contact_post','ContactController@storey')->name('contact.send');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

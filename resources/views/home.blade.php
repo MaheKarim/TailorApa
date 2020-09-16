@@ -231,7 +231,7 @@
                     <div class="col-lg-7 col-md-7">
                         <h3 class="down-line mb-5">Send Message</h3>
                         <div class="form-simple mb-5">
-                            <form id="contact-form" action="{{ url('/contact_post') }}" method="post">
+                            <form action="{{ url('/contact_post') }}" method="post">
                                 @csrf
                                 <div class="form-row">
                                     <div class="col-md-6">
