@@ -43,6 +43,9 @@ class ContactController extends Controller
         $contacts->contact_description = $request->contact_description;
         $contacts->save();
 
+        session()->flash('success', 'Thanks, For Your Message. We\'ll be in touch.');
+
+        return redirect(route('homepage'));
 
     }
 
