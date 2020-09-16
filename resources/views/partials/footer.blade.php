@@ -96,20 +96,20 @@
 
 <!--===============================================================================================-->
 <!-- All Javascript Plugin File here -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/greensock.js"></script>
-<script src="assets/js/layerslider.transitions.js"></script>
-<script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/jquery.fancybox.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/mixitup.min.js"></script>
-<script src="assets/js/paraxify.js"></script>
-<script src="assets/js/validate.js"></script>
-<script src="assets/js/custom.js"></script>
+<script src="{{ asset('/') }}assets/js/jquery.min.js"></script>
+<script src="{{ asset('/') }}assets/js/greensock.js"></script>
+<script src="{{ asset('/') }}assets/js/layerslider.transitions.js"></script>
+<script src="{{ asset('/') }}assets/js/layerslider.kreaturamedia.jquery.js"></script>
+<script src="{{ asset('/') }}assets/js/popper.min.js"></script>
+<script src="{{ asset('/') }}assets/js/bootstrap.min.js"></script>
+<script src="{{ asset('/') }}assets/js/bootstrap-select.min.js"></script>
+<script src="{{ asset('/') }}assets/js/jquery.fancybox.min.js"></script>
+<script src="{{ asset('/') }}assets/js/wow.min.js"></script>
+<script src="{{ asset('/') }}assets/js/owl.carousel.min.js"></script>
+<script src="{{ asset('/') }}assets/js/mixitup.min.js"></script>
+<script src="{{ asset('/') }}assets/js/paraxify.js"></script>
+<script src="{{ asset('/') }}assets/js/validate.js"></script>
+<script src="{{ asset('/') }}assets/js/custom.js"></script>
 <script>
     $(document).ready(function() {
 

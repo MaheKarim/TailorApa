@@ -231,26 +231,27 @@
                     <div class="col-lg-7 col-md-7">
                         <h3 class="down-line mb-5">Send Message</h3>
                         <div class="form-simple mb-5">
-                            <form id="contact-form" action="#" method="post">
+                            <form id="contact-form" action="{{ url('/contact_post') }}" method="post">
+                                @csrf
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <label>Full Name:</label>
-                                        <input type="text" class="form-control bg-gray" name="name" required="">
+                                        <input type="text" name="contact_fullName" class="form-control bg-gray">
                                     </div>
                                     <div class="col-md-6">
                                         <label>Your Email:</label>
-                                        <input type="email" class="form-control bg-gray" name="email" required="">
+                                        <input type="text" name="contact_email" class="form-control bg-gray">
                                     </div>
                                     <div class="col-md-12">
                                         <label>Subject:</label>
-                                        <input type="text" class="form-control bg-gray" name="subject" required="">
+                                        <input type="text" name="contact_subject" class="form-control bg-gray">
                                     </div>
                                     <div class="col-md-12">
                                         <label>Message:</label>
-                                        <textarea class="form-control bg-gray" name="message" rows="8" required=""></textarea>
+                                        <textarea class="form-control bg-gray" name="contact_description" rows="8" ></textarea>
                                     </div>
                                     <div class="col-md-12">
-                                        <button class="btn btn-primary" name="submit" type="submit">Send Message</button>
+                                        <button class="btn btn-primary"  type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>

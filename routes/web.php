@@ -20,3 +20,6 @@ Route::get('/','FrontendController@index')->name('homepage');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+
+Route::post('/contact_post','ContactController@storey')->name('contact.send');
