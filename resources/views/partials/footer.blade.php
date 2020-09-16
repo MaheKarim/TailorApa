@@ -5,7 +5,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="mb-5 border-left pl-3">
                     <span class="d-block mb-3">Call us any time</span>
-                    <div class="h6 text-white">+61 (03) 8376 6284</div>
+                    <div class="h6 text-white">+017 (89) 66356</div>
                     <span class="text-primary">24/7 Available</span>
                 </div>
             </div>
@@ -74,8 +74,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <span>© 2020 All Rights Reserved. Axeman</span>
-                <span class="pl-3">Design By <span class="text-primary">Unicoder</span></span>
+                <span>© 2020 All Rights Reserved. TailorApa</span>
+                <span class="pl-3">Design By <span class="text-primary">TailorApa Team</span></span>
             </div>
             <div class="col-md-4">
                 <ul class="line-menu sitemap list-color-general">

@@ -33,70 +33,13 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav w-100">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#">Home</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="index-2.html">Default Home</a></li>
-                                        <li><a class="dropdown-item" href="index-3.html">Classic Home</a></li>
-                                        <li><a class="dropdown-item" href="index-4.html">The Tailor Home</a></li>
-                                        <li><a class="dropdown-item" href="index-5.html">Dark Home <small class="bg-primary py-1 px-2 text-dark ml-2 rounded-sm">New</small></a></li>
-                                    </ul>
+                                    <a class="nav-link dropdown-toggle" href="{{ route('homepage') }}">Home</a>
+
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About</a> </li>
                                 <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#">Pages</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown">
-                                            <a class="dropdown-toggle dropdown-item" href="gallery.html">Gallery</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="gallery.html">Classic Gallery</a></li>
-                                                <li><a class="dropdown-item" href="gallery-simple.html">Simple Gallery</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a class="dropdown-toggle dropdown-item" href="projects.html">Projects</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
-                                                <li><a class="dropdown-item" href="project-single.html">Project Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a class="dropdown-toggle dropdown-item" href="our-tailors.html">Tailors</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="our-tailors.html">Our Tailors</a></li>
-                                                <li><a class="dropdown-item" href="single-tailor.html">Single Tailor</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item" href="single-service.html">Single Service</a></li>
-                                        <li><a class="dropdown-item" href="404.html">Error Page</a></li>
-                                        <li><a class="dropdown-item" href="login.html">Login</a></li>
-                                        <li><a class="dropdown-item" href="registration.html">Registration</a></li>
-                                        <li><a class="dropdown-item" href="career.html">Career</a></li>
-                                        <li><a class="dropdown-item" href="how-it-work.html">How It Work</a></li>
-                                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                                        <li><a class="dropdown-item" href="terms-and-condition.html">Terms and Condition</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="shop.html">Shop</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown">
-                                            <a class="dropdown-toggle dropdown-item" href="shop.html">Shop Grid</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="shop-grid-left-sidebar.html">Left Sidebar</a></li>
-                                                <li><a class="dropdown-item" href="shop-grid-right-sidebar.html">Right Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a class="dropdown-toggle dropdown-item" href="blog-single.html">Shop Single</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="shop-single-left-sidebar.html">Left Sidebar</a></li>
-                                                <li><a class="dropdown-item" href="shop-single-right-sidebar.html">Right Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item" href="cart.html">Cart</a></li>
-                                    </ul>
-                                </li>
+
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="gallery.html">Gallery</a>
                                     <ul class="dropdown-menu">
