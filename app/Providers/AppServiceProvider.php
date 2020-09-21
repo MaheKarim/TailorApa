@@ -2,7 +2,11 @@
 
 namespace App\Providers;
 
+
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Blade;
+use App\User;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +27,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //  custom blade directive
+        Schema::defaultStringLength(191);
+
+        User::deleting(function ($user) {
+            $user->Doctor()->delete();
+        });
     }
 }

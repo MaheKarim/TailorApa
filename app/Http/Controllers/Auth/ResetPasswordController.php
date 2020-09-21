@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
+use App\SiteSettings;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Auth;
 
 class ResetPasswordController extends Controller
 {
@@ -26,5 +27,37 @@ class ResetPasswordController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo;
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        if (Auth::check() && Auth::user()->role->id == 1 )
+        {
+           $this->redirectTo = route('admin.dashboard');
+
+        } elseif(Auth::check() && Auth::user()->role->id == 2 )
+        {
+            $this->redirectTo = route('doctor.dashboard');
+
+        } elseif(Auth::check() && Auth::user()->role->id == 3 )
+        {
+            $this->redirectTo = route('nurse.dashboard');
+
+        } else {
+            $this->redirectTo = route('user.dashboard');
+        }
+
+        $this->middleware('guest');
+    }
+
+    public function showResetForm ()
+    {
+        $settings = SiteSettings::find(1);
+        return view('auth.passwords.reset', compact('settings'));
+    }
 }

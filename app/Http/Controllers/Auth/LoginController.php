@@ -3,8 +3,12 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
+use App\Http\Requests\LoginRequest;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\SiteSettings;
+use Illuminate\Http\Request;
+use Auth;
+use User;
 
 class LoginController extends Controller
 {
@@ -21,20 +25,54 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
-    /**
-     * Where to redirect users after login.
-     *
-     * @var string
-     */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected function authenticated (Request $request, $user)
+    { }
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+         $this->middleware('guest')->except('logout');
     }
+
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        return redirect('/login');
+    }
+
+    public function showLoginForm()
+    {
+        $settings = SiteSettings::find(1);
+        return view('auth.login', compact('settings'));
+    }
+
+
+    public function field(): string
+    {
+        return filter_var(request()->phn_number,FILTER_VALIDATE_EMAIL) ? 'email' : 'phn_number';
+    }
+
+    public function redirectPath()
+    {
+        if (Auth::user()->role->id === 1) {
+            return route('admin.dashboard');
+        } if (Auth::user()->role->id === 2) {
+            return route('admin.dashboard');
+        } if (Auth::user()->role->id === 3) {
+            return route('admin.dashboard');
+        }
+
+        return route('search.doctor');
+    }
+    public function login(LoginRequest $request)
+    {
+        if (Auth::attempt([$this->field() => $request->phn_number, 'password' => $request->password])) {
+            return redirect($this->redirectPath());
+        }
+
+         return $this->sendFailedLoginResponse($request);
+    }
+
+
 }

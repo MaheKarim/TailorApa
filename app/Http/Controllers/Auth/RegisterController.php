@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
+use App\SiteSettings;
 use App\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use Auth;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
@@ -29,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo;
 
     /**
      * Create a new controller instance.
@@ -38,6 +39,22 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
+        if (Auth::check() && Auth::user()->role->id == 1 )
+        {
+           $this->redirectTo = route('admin.dashboard');
+
+        } elseif(Auth::check() && Auth::user()->role->id == 2 )
+        {
+            $this->redirectTo = route('doctor.dashboard');
+
+        } elseif(Auth::check() && Auth::user()->role->id == 3 )
+        {
+            $this->redirectTo = route('nurse.dashboard');
+
+        } else {
+            $this->redirectTo = route('user.dashboard');
+        }
+
         $this->middleware('guest');
     }
 
@@ -52,7 +69,9 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password' => ['required', 'string', 'min:6', 'confirmed'],
+            'username' =>['required', 'string' ,'unique:users' , 'min:4'],
+            'phn_number' => ['required','string', 'max:15', 'min:11','unique:users'],
         ]);
     }
 
@@ -68,6 +87,15 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'phn_number' => $data['phn_number'],
+            'username' => $data['username'],
+            // 'role_id' => $data['role_id'],
         ]);
+    }
+
+    public function showRegistrationForm()
+    {
+        $settings = SiteSettings::find(1);
+        return view('auth.register', compact('settings'));
     }
 }
