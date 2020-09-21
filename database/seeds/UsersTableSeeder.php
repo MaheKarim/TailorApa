@@ -21,29 +21,20 @@ class UsersTableSeeder extends Seeder
             'name' => 'MR Admin',
             'username' => 'admin',
             'email' => 'admin@blog.com',
-            'password' => Hash::make('rootadmin'),
+            'password' => Hash::make('password'),
             'created_at' => \Carbon\Carbon::now(),
 
         ]);
         DB::table('users')->insert([
 
             'role_id' => '2',
-            'name' => 'MR Teacher',
-            'username' => 'teacher',
-            'email' => 'teacher@blog.com',
-            'password' => Hash::make('rootteacher'),
+            'name' => 'Customer',
+            'username' => 'customer',
+            'email' => 'customer@blog.com',
+            'password' => Hash::make('password'),
             'created_at' => \Carbon\Carbon::now(),
 
         ]);
-        DB::table('users')->insert([
 
-            'role_id' => '3',
-            'name' => 'MR Student',
-            'username' => 'student',
-            'email' => 'student@blog.com',
-            'password' => Hash::make('rootstudent'),
-            'created_at' => \Carbon\Carbon::now(),
-
-        ]);
     }
 }
