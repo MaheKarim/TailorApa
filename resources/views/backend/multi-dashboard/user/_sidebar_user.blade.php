@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('search.doctor') }}">
+                    <a href="#">
                         <i class="fas fa-user-shield"></i>
                         <p>Search Doctor</p>
                     </a>

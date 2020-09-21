@@ -63,7 +63,7 @@ class LoginController extends Controller
             return route('admin.dashboard');
         }
 
-        return route('search.doctor');
+        return route('user.dashboard');
     }
     public function login(LoginRequest $request)
     {

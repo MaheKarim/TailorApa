@@ -118,22 +118,22 @@ Route::group([
 |                           Doctor Routes
 |--------------------------------------------------------------------------
 */
-Route::group(['as'=>'doctor.', 'prefix' => 'doctor', 'namespace' => 'Doctor', 'middleware' =>['auth', 'doctor']], function() {
-
-    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
-    Route::get('profile/settings', 'DashboardController@profile_seetings')->name('doctorProfileSeetings');
-    Route::post('profile/update/pic', 'DashboardController@updateProfilePic')->name('update.profile_pic');
-    Route::post('profile/update', 'DashboardController@profileSettings')->name('upadeteprofileSeetings');
-
-});
-    Route::get('/change-password','CustomAuthController@passwordChange')->name('password.change');
-    Route::post('/change-password', 'CustomAuthController@FormPassChange')->name('passwordFrom');
-    Route::get('/custom/login', 'CustomAuthController@showPage')->name('customDoctorLogin');
-    Route::post('custom-login', 'CustomAuthController@login');
-    Route::get("doctor/register", "DoctorController@signUpForm")->name("doctorSignUpForm");
-    Route::post("doctor/signup", "DoctorController@signUpFormSubmit")->name("doctorSignUpFormSubmit");
-
-    Route::get('profile/{username}' , 'ProfileController@show')->name('profile.show');
+//Route::group(['as'=>'doctor.', 'prefix' => 'doctor', 'namespace' => 'Doctor', 'middleware' =>['auth', 'doctor']], function() {
+//
+//    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+//    Route::get('profile/settings', 'DashboardController@profile_seetings')->name('doctorProfileSeetings');
+//    Route::post('profile/update/pic', 'DashboardController@updateProfilePic')->name('update.profile_pic');
+//    Route::post('profile/update', 'DashboardController@profileSettings')->name('upadeteprofileSeetings');
+//
+//});
+//    Route::get('/change-password','CustomAuthController@passwordChange')->name('password.change');
+//    Route::post('/change-password', 'CustomAuthController@FormPassChange')->name('passwordFrom');
+//    Route::get('/custom/login', 'CustomAuthController@showPage')->name('customDoctorLogin');
+//    Route::post('custom-login', 'CustomAuthController@login');
+//    Route::get("doctor/register", "DoctorController@signUpForm")->name("doctorSignUpForm");
+//    Route::post("doctor/signup", "DoctorController@signUpFormSubmit")->name("doctorSignUpFormSubmit");
+//
+//    Route::get('profile/{username}' , 'ProfileController@show')->name('profile.show');
 
 
 /*
@@ -142,18 +142,18 @@ Route::group(['as'=>'doctor.', 'prefix' => 'doctor', 'namespace' => 'Doctor', 'm
 |--------------------------------------------------------------------------
 */
 
-Route::group(['as'=>'nurse.' ,'prefix' => 'nurse', 'namespace' => 'Nurse', 'middleware' =>['auth', 'nurse']], function() {
-    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
-    // Nurse Auth Controller
-    Route::get('change-password',   'NurseAuthController@changePasswordPage')->name('nursePassChange');
-    Route::post('change-password',  'NurseAuthController@changePasswordAction')->name('nursePassChangeAction');
-    // Profile Picture & Settings Update
-    Route::post('profile_pic/upload',  'NurseProfileController@nurse_picUpdate')->name('nursePicUpdate');
-    Route::get('/profile/settings',    'NurseProfileController@settings_page')->name('nurse_ProfilePage');
-    Route::post('/profile/update',     'NurseProfileController@profile_update')->name('profileAllUpdate');
-});
-Route::get('nurse/register',      'Nurse\NurseAuthController@nurseSignUpForm')->name("nurse.signup");
-Route::post('nurse/signup',     'Nurse\NurseAuthController@registerNurse')->name('nurse.signup_page');
+//Route::group(['as'=>'nurse.' ,'prefix' => 'nurse', 'namespace' => 'Nurse', 'middleware' =>['auth', 'nurse']], function() {
+//    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+//    // Nurse Auth Controller
+//    Route::get('change-password',   'NurseAuthController@changePasswordPage')->name('nursePassChange');
+//    Route::post('change-password',  'NurseAuthController@changePasswordAction')->name('nursePassChangeAction');
+//    // Profile Picture & Settings Update
+//    Route::post('profile_pic/upload',  'NurseProfileController@nurse_picUpdate')->name('nursePicUpdate');
+//    Route::get('/profile/settings',    'NurseProfileController@settings_page')->name('nurse_ProfilePage');
+//    Route::post('/profile/update',     'NurseProfileController@profile_update')->name('profileAllUpdate');
+//});
+//Route::get('nurse/register',      'Nurse\NurseAuthController@nurseSignUpForm')->name("nurse.signup");
+//Route::post('nurse/signup',     'Nurse\NurseAuthController@registerNurse')->name('nurse.signup_page');
 
 /*
 |--------------------------------------------------------------------------
@@ -169,8 +169,7 @@ Route::group(['as'=>'user.' ,'prefix' => 'user', 'namespace' => 'User', 'middlew
 |                            Search & Booking
 |--------------------------------------------------------------------------
 */
-Route::get('/search/your/doctor', 'SearchController@search')->name('search.doctor');
-Route::get('/search/doctor', 'SearchController@search_doctor')->name('search.doctorProfile');
+
 
 Route::get('booking/confirmation/{id}/done','BookingController@booking_confirmation')->name('booking.confirmation');
 Route::get('/booking-show','BookingController@showbooking')->name('bookingShow');

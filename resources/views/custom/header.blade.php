@@ -68,21 +68,14 @@
 								<a href="{{route('allProduct')}}">Diagnostic Product</a>
 							</li>
 
-							<li class="has-submenu">
-								<a  href="{{route('search.doctor')}}">Doctor Search</a>
-							</li>
-							<li class="has-submenu">
-								<a  href="{{route('contact.doctor_form')}}">Doctor at Home</a>
-							</li>
-							<li class="has-submenu">
-								<a href="{{route('contact.form')}}">Nursing Service</a>
-							</li>
+
+
 							<li class="has-submenu">
 								<a href="#">Career <i class="fas fa-chevron-down"></i></a>
 								<ul class="submenu">
-									<li><a href="{{route('doctorSignUpForm')}}">Doctor Register</a></li>
-									<li><a href="{{route('login')}}">Doctor Login</a></li>
-									<li><a href="{{ route('nurse.signup') }}">Nurse Register</a></li>
+									<li><a href="#">Doctor Register</a></li>
+									<li><a href="#">Doctor Login</a></li>
+									<li><a href="#">Nurse Register</a></li>
 									<li><a href="{{ route('login') }}">Nurse Login</a></li>
 								</ul>
 							</li>
