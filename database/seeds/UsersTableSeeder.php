@@ -21,37 +21,37 @@ class UsersTableSeeder extends Seeder
             'name' => 'MR Admin',
             'username' => 'admin',
             'email' => 'admin@blog.com',
-            'password' => Hash::make('rootadmin'),
+            'password' => Hash::make('password'),
             'created_at' => \Carbon\Carbon::now(),
 
         ]);
         DB::table('users')->insert([
 
             'role_id' => '2',
-            'name' => 'MR Doctor',
-            'username' => 'doctor',
-            'email' => 'doctor@blog.com',
-            'password' => Hash::make('rootdoctor'),
+            'name' => 'Agent',
+            'username' => 'Agent',
+            'email' => 'Agent@blog.com',
+            'password' => Hash::make('password'),
             'created_at' => \Carbon\Carbon::now(),
 
         ]);
         DB::table('users')->insert([
 
             'role_id' => '3',
-            'name' => 'MR Nurse',
-            'username' => 'nurse',
-            'email' => 'nurse@blog.com',
-            'password' => Hash::make('rootnurse'),
+            'name' => 'Agent 2',
+            'username' => 'agent_sub',
+            'email' => 'agent_sub@blog.com',
+            'password' => Hash::make('password'),
             'created_at' => \Carbon\Carbon::now(),
 
         ]);
         DB::table('users')->insert([
 
             'role_id' => '4',
-            'name' => 'MR User',
+            'name' => 'User',
             'username' => 'user',
             'email' => 'user@blog.com',
-            'password' => Hash::make('rootuser'),
+            'password' => Hash::make('password'),
             'created_at' => \Carbon\Carbon::now(),
 
         ]);
