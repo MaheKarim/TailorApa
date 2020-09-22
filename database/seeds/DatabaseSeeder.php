@@ -14,12 +14,8 @@ class DatabaseSeeder extends Seeder
        $this->call([
            UsersTableSeeder::class,
            RoleTableSeeder::class,
-           AreaTableSeeder::class,
-           CategoryTableSeeder::class,
-           DoctorTableSeeder::class,
            StatusTableSeeder::class,
            SiteSettingsTableSeeder::class,
-           NursingServiceTableSeeder::class
        ]);
     }
 }
