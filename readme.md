@@ -9,16 +9,14 @@
 
 </p>
 
-## About AmarDoctor
+## About Tailor Apa
 #### Admin Panel Overview
 ![Admin Panel](https://user-images.githubusercontent.com/16819523/75204073-165d1300-579a-11ea-8b50-954c95dfb075.png) 
 
 ###### Control Panel
 ![Control Panel](https://user-images.githubusercontent.com/16819523/75204242-8cfa1080-579a-11ea-9ee2-f060398286ce.png)
 
-### Doctor Panel Overview
 
-![Doctor Panel](https://user-images.githubusercontent.com/16819523/75205228-6be6ef00-579d-11ea-8714-469ed278d950.png)
 
 
 Another For Profile Update <br>
