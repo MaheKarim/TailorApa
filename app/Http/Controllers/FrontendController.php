@@ -16,10 +16,10 @@ class FrontendController extends Controller
     public function indexpage()
     {
       //  $data = [ ];
-        $reviews = Review::all();
+      //  $reviews = Review::all();
         $products = Product::paginate(4);;
         $settings = SiteSettings::find(1);
-        return view('frontend.index', compact('reviews', 'products','settings'));
+        return view('frontend.index', compact( 'products','settings'));
     }
 
     public function clear ()
