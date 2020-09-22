@@ -30,11 +30,7 @@ class DashboardController extends Controller
         return view('backend.admin.dashboard', $data);
     }
 
-    public function showDoctorAll()
-    {
-        $doctors = Doctor::all();
-        return view('backend.admin.alldoctors', compact('doctors'));
-    }
+    
 
     public function showAllUser()
     {
@@ -52,37 +48,14 @@ class DashboardController extends Controller
         return redirect()->route('admin.showAllUser');
     }
 
-    public function destroyDoctor($id)
-    {
-        $users = User::where('id', $id)->pluck('id');
-        Doctor::whereIn('user_id', $users)->delete();
-        $users->delete();
 
-        session()->flash('warning','Doctor Deleted Successfully!');
-        return redirect()->route('admin.showAllDoctor');
-    }
 
     public function exportUser(Request $request)
     {
     //  Code for 3.1.19 version
         return Excel::download(new UserExports, 'users.xlsx');
     }
-    public function exportDoctor(Request $request)
-    {
-    //  Code for 3.1.19 version
-        return Excel::download(new DoctorsExport, 'doctors.xlsx');
-    }
 
-    public function exportNurse (Request $request)
-    {
-        return Excel::download(new NurseExport, 'nurse.xlsx');
-    }
 
-    public function destroyDoctorReq ($id)
-    {
-        DoctorContact::where('id', $id)->delete();
 
-        session()->flash('warning','Doctor Service Request Deleted Successfully!');
-        return redirect()->route('admin.dashboard');
-    }
 }

@@ -42,25 +42,13 @@ Route::group(['as'=>'admin.' , 'prefix' => 'admin', 'namespace' => 'Admin', 'mid
     Route::post('password/change','ProfileController@passChangeReq')->name('changepaswword');
     Route::get('/settings','SiteSettingsController@index')->name('settings');
     Route::post('settings-update','SiteSettingsController@store')->name('settings.store');
-
-    Route::get('show/all_doctor','DashboardController@showDoctorAll')->name('showAllDoctor');
     Route::get('show/all_user','DashboardController@showAllUser')->name('showAllUser');
-
-
     Route::post('/export-user','DashboardController@exportUser')->name('export.onlyUser');
-    Route::post('/export-nurse','DashboardController@exportNurse')->name('export.onlyNurse');
-    Route::post('/export-doctor','DashboardController@exportDoctor')->name('export.onlyDoctor');
 
-    Route::get('/delete/doctor/service/{id}', 'DashboardController@destroyDoctorReq')->name('delete.doctor_req');
+
+
     Route::get('/delete/user/{id}', 'DashboardController@destroy')->name('deleteUser');
-    Route::get('/delete/doctor/{id}', 'DashboardController@destroyDoctor')->name('deleteDoctor');
 
-    Route::get('/nursing/service/index', 'NursingServiceController@index')->name('nursing_service.index');
-    Route::get('/nursing/service/create', 'NursingServiceController@create')->name('nursing_service.create');
-    Route::post('nursing-store','NursingServiceController@store')->name('nursing_service.store');
-    Route::get('/nursing/service/edit/{id}', 'NursingServiceController@edit')->name('nursing_service.edit');
-    Route::post('nursing-update','NursingServiceController@update')->name('nursing_service.update');
-    Route::get('/nursing/service/delete/{nursingService}', 'NursingServiceController@destroy')->name('nursing_service.destroy');
 
 
 });
