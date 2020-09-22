@@ -32,12 +32,12 @@
                     </span>
                     <h4 class="text-section">Internal Function</h4>
                 </li>
-                  <li class="nav-item">
-                    <a href="{{ route('admin.showAllDoctor') }}">
-                        <i class="fas fa-user-md"></i>
-                        <p>Show All Doctor</p>
-                    </a>
-                </li>
+{{--                  <li class="nav-item">--}}
+{{--                    <a href="{{ route('admin.showAllDoctor') }}">--}}
+{{--                        <i class="fas fa-user-md"></i>--}}
+{{--                        <p>Show All Doctor</p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
                 <li class="nav-item">
                     <a href="{{ route('admin.showAllUser') }}">
                         <i class="fas fa-user-shield"></i>
@@ -45,31 +45,26 @@
 
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('admin.showAllNurse') }}">
-                        <i class="fa fa-ambulance" aria-hidden="true"></i>
-                        <p>Show All Nurse</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ route('showArea') }}">
-                        <i class="fas fa-desktop"></i>
-                        <p>Area Create / Show</p>
-                    </a>
-                </li>
 
-                <li class="nav-item">
-                <a href="{{ route('showCategory') }}">
-                    <i class="fas fa-medkit"></i>
-                        <p>Doctor Type / Category</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                <a href="{{ route('admin.nursing_service.index') }}">
-                    <i class="fas fa-server"></i>
-                        <p>Nursing Service</p>
-                    </a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{ route('showArea') }}">--}}
+{{--                        <i class="fas fa-desktop"></i>--}}
+{{--                        <p>Area Create / Show</p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+
+{{--                <li class="nav-item">--}}
+{{--                <a href="{{ route('showCategory') }}">--}}
+{{--                    <i class="fas fa-medkit"></i>--}}
+{{--                        <p>Doctor Type / Category</p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                <a href="{{ route('admin.nursing_service.index') }}">--}}
+{{--                    <i class="fas fa-server"></i>--}}
+{{--                        <p>Nursing Service</p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
 
                 <li class="nav-section">
                     <span class="sidebar-mini-icon">
@@ -84,13 +79,7 @@
                             {{-- <span class="badge badge-success">4</span> --}}
                     </a>
                 </li>
-                {{--<li class="nav-item">--}}
-                    {{--<a href="#">--}}
-                            {{--<i class="fas fa-quote-left"></i>--}}
-                            {{--<p>Review / Testimonial</p>--}}
-                            {{--<span class="badge badge-success">4</span>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
+
 
                     <li class="nav-section">
                         <span class="sidebar-mini-icon">

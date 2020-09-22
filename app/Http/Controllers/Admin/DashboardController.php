@@ -42,11 +42,7 @@ class DashboardController extends Controller
         $details_user = User::where('role_id',4)->get();
         return view('backend.admin.alluser',compact('details_user'));
     }
-    public function showAllNurse()
-    {
-        $details_user = User::where('role_id',3)->get();
-        return view('backend.admin.allnurse',compact('details_user'));
-    }
+    
 
     public function destroy ($id)
     {
