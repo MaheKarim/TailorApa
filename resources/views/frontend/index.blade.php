@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from unicoderbd.com/theme/html/axeman/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Sep 2020 16:05:33 GMT -->
 <head>
     <!-- Meta Tag -->
     <meta charset="utf-8">
@@ -348,52 +347,8 @@
         </div>
         <!-- Why Choose Us Section End -->
 
-		<!-- Make Design Banner Section Start -->
-		<div class="full-row overlay-secondary paraxify" style="background-image: url(assets/images/background/4.png); background-repeat: no-repeat;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 mx-auto text-center">
-						<h1 class="text-white text-uppercase mb-4">Make Your Suit by Awesome Design and Cutting</h1>
-						<div class="text-white">
-							<p>To plan the role of each social media platform within a brand’s total marketing strategy, start by creating a media matrix</p>
-						</div>
-						<a href="#" class="btn btn-primary-fixed mt-5">Booking Shedule</a>
-					</div>
-				</div>
-			</div>
-		</div>
-        <!-- Make Design Banner Section End -->
 
-		<!-- How We Different Section Start -->
-        <div class="full-row">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 mb-sm-30">
-                        <span class="tagline text-primary mb-2 d-block">How I'm Different</span>
-                        <h2 class="mb-0">Best & Fast Tailoring and Dry Cleaning is Dedicated to Serving the Community.</h2>
-                        <a href="#" class="btn btn-primary-fixed mt-5">Read More</a>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-30">
-                            <p>Tempor viverra et aliquam cum accumsan a pede Tortor conubia torquent magnis. Dolor quam quam auctor hymenaeos diam fringilla. Torquent inceptos netus lorem dapibus nisi cum congue. Dictum molestie sed. Condimentum nec risus
-                                suscipit vehicula sociosqu magna gravida. Litora, dictumst justo nam. Nam, nunc pede. Lobortis mattis metus consectetuer.</p>
-                        </div>
-                        <p>Conubia massa. Facilisis, est, sociosqu parturient. Euismod sagittis viverra quam non facilisi laoreet luctus sodales faucibus inceptos netus per est nostra elit nam eu sapien praesent. Tellus tempor pharetra morbi purus.</p>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-lg-12">
-                        <div class="banner-planing position-relative d-inline-block w-100">
-                            <div class="content bg-primary position-absolute">
-                                <h3 class="text-dark">With nearly 25 years of experience, we have the highest knowledge of alterations and tailoring services.</h3>
-                            </div>
-                            <img src="{{  asset('/') }}frontend/assets/images/thumb/38.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- How We Different Section End -->
+
 
 		<!-- Product Slider Section Start -->
         <div class="full-row bg-light" style="margin-top: 80px">
