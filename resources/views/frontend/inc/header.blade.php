@@ -32,7 +32,7 @@
 
 </head>
 
-<div ic="page_wrapper">
+<div id="page_wrapper">
     <!-- Header Section Start -->
     <header class="nav-split-simple nav-on-banner fixed-bg-secondary">
         <div class="top-header sm-mx-none">
@@ -40,16 +40,16 @@
                 <div class="row">
                     <div class="col-lg-6 py-2">
                         <ul class="top-contact">
-                            <li><a href="#" class="text-white">(+1) 828-376-0532</a></li>
-                            <li><a href="#" class="text-white">security@support.com</a></li>
-                            <li><a href="#" class="text-white">Live Chat</a></li>
+                            <li><a href="#" class="text-white">(+880) 177-896-356</a></li>
+                            <li><a href="#" class="text-white">security@tailorapa.com</a></li>
+
                         </ul>
                     </div>
                     <div class="col-lg-6 py-2">
                         <ul class="nav-bar-top right list-color-white d-flex">
-                            <li><a href="registration.html">Registration</a></li>
-                            <li><a href="faq.html">Login</a></li>
-                            <li class="flaticon-shopping-cart flat-mini"><a href="#"> Cart (03)</a></li>
+                            <li><a href="{{ route('register') }}">Registration</a></li>
+                            <li><a href="{{ route('login') }}">Login</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -68,12 +68,7 @@
                                 <ul class="navbar-nav w-100">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#">Home</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="index-2.html">Default Home</a></li>
-                                            <li><a class="dropdown-item" href="index-3.html">Classic Home</a></li>
-                                            <li><a class="dropdown-item" href="index-4.html">The Tailor Home</a></li>
-                                            <li><a class="dropdown-item" href="index-5.html">Dark Home <small class="bg-primary py-1 px-2 text-dark ml-2 rounded-sm">New</small></a></li>
-                                        </ul>
+
                                     </li>
                                     <li class="nav-item"><a class="nav-link" href="about.html">About</a> </li>
                                     <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
@@ -101,14 +96,6 @@
                                                     <li><a class="dropdown-item" href="single-tailor.html">Single Tailor</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a class="dropdown-item" href="single-service.html">Single Service</a></li>
-                                            <li><a class="dropdown-item" href="404.html">Error Page</a></li>
-                                            <li><a class="dropdown-item" href="login.html">Login</a></li>
-                                            <li><a class="dropdown-item" href="registration.html">Registration</a></li>
-                                            <li><a class="dropdown-item" href="career.html">Career</a></li>
-                                            <li><a class="dropdown-item" href="how-it-work.html">How It Work</a></li>
-                                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                                            <li><a class="dropdown-item" href="terms-and-condition.html">Terms and Condition</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">

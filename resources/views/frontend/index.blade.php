@@ -20,7 +20,7 @@
 						<p style="font-weight:600; text-align:center; cursor:pointer; padding-right:35px; padding-left:35px; font-size:16px; line-height:40px; top:610px; left:32px; color:#202430; border-radius:0px; border: 2px solid; border-color: #d6b07a; padding-top:5px; padding-bottom:5px; background:#d6b07a; white-space:nowrap;" class="higlight-font">Make An Appointment</p>
 					</a>
 				</div>
-				
+
 			</div>
 		</div>
 

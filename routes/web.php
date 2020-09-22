@@ -174,6 +174,6 @@ Route::group(['as'=>'user.' ,'prefix' => 'user', 'namespace' => 'User', 'middlew
 Route::get('booking/confirmation/{id}/done','BookingController@booking_confirmation')->name('booking.confirmation');
 Route::get('/booking-show','BookingController@showbooking')->name('bookingShow');
 
-Route::get('/login/user', 'Auth\LoginController@showUserLoginForm');
+
 
 
