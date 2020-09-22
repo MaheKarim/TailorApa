@@ -114,27 +114,6 @@ Route::group([
 //    Route::get('/contact/delete/{id}', 'ContactFormController@delete')->name('deleteContactForm');
 
 /*
-|--------------------------------------------------------------------------
-|                           Doctor Routes
-|--------------------------------------------------------------------------
-*/
-//Route::group(['as'=>'doctor.', 'prefix' => 'doctor', 'namespace' => 'Doctor', 'middleware' =>['auth', 'doctor']], function() {
-//
-//    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
-//    Route::get('profile/settings', 'DashboardController@profile_seetings')->name('doctorProfileSeetings');
-//    Route::post('profile/update/pic', 'DashboardController@updateProfilePic')->name('update.profile_pic');
-//    Route::post('profile/update', 'DashboardController@profileSettings')->name('upadeteprofileSeetings');
-//
-//});
-//    Route::get('/change-password','CustomAuthController@passwordChange')->name('password.change');
-//    Route::post('/change-password', 'CustomAuthController@FormPassChange')->name('passwordFrom');
-//    Route::get('/custom/login', 'CustomAuthController@showPage')->name('customDoctorLogin');
-//    Route::post('custom-login', 'CustomAuthController@login');
-//    Route::get("doctor/register", "DoctorController@signUpForm")->name("doctorSignUpForm");
-//    Route::post("doctor/signup", "DoctorController@signUpFormSubmit")->name("doctorSignUpFormSubmit");
-//
-//    Route::get('profile/{username}' , 'ProfileController@show')->name('profile.show');
-
 
 /*
 |--------------------------------------------------------------------------

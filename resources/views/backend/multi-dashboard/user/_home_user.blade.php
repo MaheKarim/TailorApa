@@ -17,13 +17,13 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <h3 align="center" style="background-color: #0de0fe"> Doctor Booking Status Table</h3>
+                <h3 align="center" style="background-color: #0de0fe"> Custom Order Status Table</h3>
             </div>
             <table class="table">
                 <thead>
                 <tr>
                     <th scope="col">Patient Name</th>
-                    <th scope="col">Doctor Name</th>
+                    <th scope="col"> Name</th>
                     <th scope="col">Department</th>
                     <th scope="col">Area</th>
                     <th scope="col">Req Date</th>
