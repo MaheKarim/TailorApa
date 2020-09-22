@@ -28,28 +28,8 @@
                 </div>
             </div>
         </div>
-{{--        <div class="col-md-4">--}}
-{{--            <div class="card card-dark bg-secondary-gradient">--}}
-{{--                <div class="card-body bubble-shadow">--}}
-{{--                    <h1>{{ $users = \App\User::where('role_id','2')->count() }}</h1>--}}
-{{--                    <h5 class="op-10">Total Doctor</h5>--}}
-{{--                    <div class="pull-right">--}}
-{{--                        <h3 class="fw-bold op-10">Doctor Database</h3>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-        <div class="col-md-4">
-            <div class="card card-dark bg-secondary2">
-                <div class="card-body curves-shadow">
-                    <h1>{{ $users = \App\User::where('role_id','3')->count() }}</h1>
-                    <h5 class="op-10">Total Nurse</h5>
-                    <div class="pull-right">
-                        <h3 class="fw-bold op-10">Nurse Database</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
     </div>
 
     <!-- Start -->
@@ -97,25 +77,7 @@
     </div>
    <!--   Data Table Add -->
     <div class="row">
-        <div class="col-sm-6 col-md-3">
-            <div class="card card-stats card-round">
-                <div class="card-body ">
-                    <div class="row">
-                        <div class="col-5">
-                            <div class="icon-big text-center">
-                                <i class="flaticon-chart-pie text-warning"></i>
-                            </div>
-                        </div>
-                        <div class="col-7 col-stats">
-                            <div class="numbers">
-                                <p class="card-category">Doctor Booking</p>
-                                <h4 class="card-title">{{ \App\Booking::count() }}</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="col-sm-6 col-md-3">
             <div class="card card-stats card-round">
                 <div class="card-body ">
@@ -135,25 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="card card-stats card-round">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-5">
-                            <div class="icon-big text-center">
-                                <i class="flaticon-delivery-truck text-primary"></i>
-                            </div>
-                        </div>
-                        <div class="col-7 col-stats">
-                            <div class="numbers">
-                                <p class="card-category">Nurse Booking</p>
-                                <h4 class="card-title">{{ \App\ContactForm::count() }}</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="col-sm-6 col-md-3">
             <div class="card card-stats card-round">
                 <div class="card-body">

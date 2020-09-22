@@ -45,11 +45,7 @@ Route::group(['as'=>'admin.' , 'prefix' => 'admin', 'namespace' => 'Admin', 'mid
     Route::get('show/all_user','DashboardController@showAllUser')->name('showAllUser');
     Route::post('/export-user','DashboardController@exportUser')->name('export.onlyUser');
 
-
-
     Route::get('/delete/user/{id}', 'DashboardController@destroy')->name('deleteUser');
-
-
 
 });
 
@@ -73,17 +69,6 @@ Route::group([
     Route::post('status_change','BookingController@bookingStatusStore')->name('statusChangeOpt');
     Route::get('/booking/delete/{id}', 'BookingController@delete')->name('bookingDelete');
 
-    Route::get('/area/view','AreaController@show')->name('showArea');
-    Route::get('/area/add','AreaController@index')->name('addArea');
-    Route::post('store-area', 'AreaController@store');
-    Route::get('/area/edit/{area}','AreaController@edit')->name('editArea');
-    Route::post('/update-area','AreaController@update')->name('updateArea');
-    Route::get('/area/delete/{id}','AreaController@delete')->name('deleteArea');
-
-    Route::get('/category/view', 'CategoryController@view')->name('showCategory');
-    Route::get('/category/delete/{id}', 'CategoryController@delete')->name('deleteCategory');
-    Route::get('/category/add','CategoryController@index')->name('addCategory');
-    Route::post('store-category', 'CategoryController@store');
 
     Route::get('/show/product','ProductController@index')->name('showProduct');
     Route::get('/add/product','ProductController@add')->name('addProduct');
@@ -93,29 +78,6 @@ Route::group([
     Route::get('/product/{productUrl}', 'ProductController@productSee')->name('productSee');
     Route::get('/product/edit/{product}','ProductController@edit')->name('editProduct');
     Route::post('/update/product','ProductController@update')->name('updateProduct');
-
-
-
-/*
-
-/*
-|--------------------------------------------------------------------------
-|                               Nurse Routes
-|--------------------------------------------------------------------------
-*/
-
-//Route::group(['as'=>'nurse.' ,'prefix' => 'nurse', 'namespace' => 'Nurse', 'middleware' =>['auth', 'nurse']], function() {
-//    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
-//    // Nurse Auth Controller
-//    Route::get('change-password',   'NurseAuthController@changePasswordPage')->name('nursePassChange');
-//    Route::post('change-password',  'NurseAuthController@changePasswordAction')->name('nursePassChangeAction');
-//    // Profile Picture & Settings Update
-//    Route::post('profile_pic/upload',  'NurseProfileController@nurse_picUpdate')->name('nursePicUpdate');
-//    Route::get('/profile/settings',    'NurseProfileController@settings_page')->name('nurse_ProfilePage');
-//    Route::post('/profile/update',     'NurseProfileController@profile_update')->name('profileAllUpdate');
-//});
-//Route::get('nurse/register',      'Nurse\NurseAuthController@nurseSignUpForm')->name("nurse.signup");
-//Route::post('nurse/signup',     'Nurse\NurseAuthController@registerNurse')->name('nurse.signup_page');
 
 /*
 |--------------------------------------------------------------------------
