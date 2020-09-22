@@ -58,5 +58,10 @@ class User extends Authenticatable
         return $this->belongsTo('App\Product');
     }
 
+    public function Status ()
+    {
+        return $this->belongsTo('App\Status');
+    }
+
 
 }

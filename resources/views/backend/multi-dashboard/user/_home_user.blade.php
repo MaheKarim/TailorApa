@@ -62,7 +62,6 @@
                             <th scope="col">Product Name</th>
                             <th scope="col">Total Rate</th>
                             <th scope="col">Package Rate</th>
-                            <th scope="col">Admin PHN Number</th>
                             <th scope="col">Req Date</th>
                             <th scope="col">Status</th>
                         </tr>
@@ -73,7 +72,7 @@
                                 <td>{{$productbooking->get_product_details->product_name}}</td>
                                 <td>{{$productbooking->get_product_details->total_rate }}</td>
                                 <td>{{ $productbooking->get_product_details->package_rate }}</td>
-                                <td>{{ $productbooking->get_product_details->phn_number }}</td>
+
                                 <td> {{ $productbooking->created_at->format('jS F Y') }}</td>
                                 <td>{!! $productbooking->Status->status_name !!}</td>
                             </tr>

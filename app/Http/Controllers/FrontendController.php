@@ -15,8 +15,7 @@ class FrontendController extends Controller
     //  start here
     public function indexpage()
     {
-      //  $data = [ ];
-      //  $reviews = Review::all();
+
         $products = Product::paginate(4);;
         $settings = SiteSettings::find(1);
         return view('frontend.index', compact( 'products','settings'));

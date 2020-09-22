@@ -25,5 +25,9 @@ class StatusTableSeeder extends Seeder
           'status_name' => 'Rejected',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
        ]);
+        DB::table('statuses')->insert([
+          'status_name' => 'Waiting For Delivery',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+       ]);
     }
 }

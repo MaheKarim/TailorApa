@@ -37,7 +37,7 @@
                 <li class="nav-item">
                     <a href="#">
                         <i class="fas fa-user-shield"></i>
-                        <p>Search Doctor</p>
+                        <p>Custom Order</p>
                     </a>
                 </li>
             </ul>

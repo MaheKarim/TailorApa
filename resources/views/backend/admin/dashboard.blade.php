@@ -290,7 +290,7 @@
                             <tr>
                                 <th>Buyer Name</th>
                                 <th>Buyer Email</th>
-                                <th>Buyer Phn</th>
+
                                 <th>Product Name</th>
                                 <th>Product Package Price</th>
                                 <th>Booking Date</th>
@@ -304,7 +304,7 @@
                                 <tr>
                                     <td>{{ $productbooking->user->name }}</td>
                                     <td>{{ $productbooking->user->email }}</td>
-                                    <td>{{ $productbooking->user->phn_number }}</td>
+
                                     <td>{{ $productbooking->get_product_details->product_name }}</td>
                                     <td>{{ $productbooking->get_product_details->package_rate }}</td>
                                     <td>{{ $productbooking->created_at->format('jS F') }}</td>
