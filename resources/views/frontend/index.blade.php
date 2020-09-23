@@ -133,10 +133,10 @@
                                            {{ $product->product_name }}
                                         </a>
                                         <strike class="price">
-                                                <h6 class="woocommerce-Price-amount amount">$25.00</h6>
+                                                <h6 class="woocommerce-Price-amount amount">{{ $product->total_rate }} BDT</h6>
                                         </strike>
                                         <div class="star-rating">
-                                            <h4 class="woocommerce-Price-amount amount">$25.00</h4>
+                                            <h4 class="woocommerce-Price-amount amount">{{ $product->package_rate }} BDT</h4>
                                         </div>
                                     </div>
                                 </div>

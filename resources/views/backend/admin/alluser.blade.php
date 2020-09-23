@@ -34,11 +34,11 @@
                             <table id="add-row" class="display table table-striped table-hover" >
                                 <thead>
                                 <tr>
-                                    <th>Patient Name</th>
-                                    <th>Patient Mail</th>
-                                    <th>Patient PHN NUMBER</th>
-                                    <th>Patient Username</th>
-                                    <th>Patient ID Created</th>
+                                    <th> Name</th>
+                                    <th> Mail</th>
+                                    <th> PHN NUMBER</th>
+                                    <th> Username</th>
+                                    <th> ID Created</th>
                                     <th>Action</th>
 
                                 </tr>
