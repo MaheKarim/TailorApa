@@ -116,238 +116,33 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="owl-carousel product-slider 4block-carousel dot-disable">
+                            @foreach($products as $product)
                             <div class="item">
                                 <div class="product type-product hover-img-zoom transation">
                                     <div class="product-img overflow-hidden">
                                         <a href="#" class="product-link">
-                                            <img src="{{  asset('/') }}frontend/assets/images/product/1.png" alt="image not found!">
+                                            <img src="{{ asset('storage') }}/{{ $product->thumbnail_medium }}" alt="image not found!">
                                         </a>
                                         <div class="love-like d-flex justify-content-center align-items-center">
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-like-1 flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-shopping-bag flat-mini"></span></a>
+
                                             <a href="#" class="woo-wishlist"><span class="flaticon-search flat-mini"></span></a>
                                         </div>
                                     </div>
                                     <div class="product-detail text-center">
-                                        <a href="#" class="product-link">
-                                            <h6 class="woocommerce-loop-product__title">Mens Band Collar Shirt</h6>
+                                        <a href="{{route('productSee', $product->product_slug)}}" class="product-link">
+                                           {{ $product->product_name }}
                                         </a>
-                                        <span class="price">
-                                                <span class="woocommerce-Price-amount amount">$25.00</span>
-                                        </span>
+                                        <strike class="price">
+                                                <h6 class="woocommerce-Price-amount amount">$25.00</h6>
+                                        </strike>
                                         <div class="star-rating">
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
+                                            <h4 class="woocommerce-Price-amount amount">$25.00</h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="product type-product hover-img-zoom transation">
-                                    <div class="product-img overflow-hidden">
-                                        <a href="#" class="product-link">
-                                            <img src="{{  asset('/') }}frontend/assets/images/product/2.png" alt="image not found!">
-                                        </a>
-                                        <div class="love-like d-flex justify-content-center align-items-center">
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-like-1 flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-shopping-bag flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-search flat-mini"></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail text-center">
-                                        <a href="#" class="product-link">
-                                            <h6 class="woocommerce-loop-product__title">Mens Brand Purple Color Shirt</h6>
-                                        </a>
-                                        <span class="price">
-                                                <span class="woocommerce-Price-amount amount">$32.00</span>
-                                        </span>
-                                        <div class="star-rating">
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product type-product hover-img-zoom transation">
-                                    <div class="product-img overflow-hidden">
-                                        <a href="#" class="product-link">
-                                            <img src="{{  asset('/') }}frontend/assets/images/product/3.png" alt="image not found!">
-                                        </a>
-                                        <div class="love-like d-flex justify-content-center align-items-center">
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-like-1 flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-shopping-bag flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-search flat-mini"></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail text-center">
-                                        <a href="#" class="product-link">
-                                            <h6 class="woocommerce-loop-product__title">Mens Brand Formal Shirt</h6>
-                                        </a>
-                                        <span class="price">
-                                                <span class="woocommerce-Price-amount amount">$18.00</span>
-                                        </span>
-                                        <div class="star-rating">
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product type-product hover-img-zoom transation">
-                                    <div class="product-img overflow-hidden">
-                                        <a href="#" class="product-link">
-                                            <img src="{{  asset('/') }}frontend/assets/images/product/4.png" alt="image not found!">
-                                        </a>
-                                        <div class="love-like d-flex justify-content-center align-items-center">
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-like-1 flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-shopping-bag flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-search flat-mini"></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail text-center">
-                                        <a href="#" class="product-link">
-                                            <h6 class="woocommerce-loop-product__title">Mens Band Collar Shirt</h6>
-                                        </a>
-                                        <span class="price">
-                                                <span class="woocommerce-Price-amount amount">$25.00</span>
-                                        </span>
-                                        <div class="star-rating">
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product type-product hover-img-zoom transation">
-                                    <div class="product-img overflow-hidden">
-                                        <a href="#" class="product-link">
-                                            <img src="{{  asset('/') }}frontend/assets/images/product/1.png" alt="image not found!">
-                                        </a>
-                                        <div class="love-like d-flex justify-content-center align-items-center">
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-like-1 flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-shopping-bag flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-search flat-mini"></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail text-center">
-                                        <a href="#" class="product-link">
-                                            <h6 class="woocommerce-loop-product__title">Mens Band Collar Shirt</h6>
-                                        </a>
-                                        <span class="price">
-                                                <span class="woocommerce-Price-amount amount">$25.00</span>
-                                        </span>
-                                        <div class="star-rating">
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product type-product hover-img-zoom transation">
-                                    <div class="product-img overflow-hidden">
-                                        <a href="#" class="product-link">
-                                            <img src="{{  asset('/') }}frontend/assets/images/product/2.png" alt="image not found!">
-                                        </a>
-                                        <div class="love-like d-flex justify-content-center align-items-center">
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-like-1 flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-shopping-bag flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-search flat-mini"></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail text-center">
-                                        <a href="#" class="product-link">
-                                            <h6 class="woocommerce-loop-product__title">Mens Brand Purple Color Shirt</h6>
-                                        </a>
-                                        <span class="price">
-                                                <span class="woocommerce-Price-amount amount">$32.00</span>
-                                        </span>
-                                        <div class="star-rating">
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product type-product hover-img-zoom transation">
-                                    <div class="product-img overflow-hidden">
-                                        <a href="#" class="product-link">
-                                            <img src="{{  asset('/') }}frontend/assets/images/product/3.png" alt="image not found!">
-                                        </a>
-                                        <div class="love-like d-flex justify-content-center align-items-center">
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-like-1 flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-shopping-bag flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-search flat-mini"></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail text-center">
-                                        <a href="#" class="product-link">
-                                            <h6 class="woocommerce-loop-product__title">Mens Brand Formal Shirt</h6>
-                                        </a>
-                                        <span class="price">
-                                                <span class="woocommerce-Price-amount amount">$18.00</span>
-                                        </span>
-                                        <div class="star-rating">
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product type-product hover-img-zoom transation">
-                                    <div class="product-img overflow-hidden">
-                                        <a href="#" class="product-link">
-                                            <img src="{{  asset('/') }}frontend/assets/images/product/4.png" alt="image not found!">
-                                        </a>
-                                        <div class="love-like d-flex justify-content-center align-items-center">
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-like-1 flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-shopping-bag flat-mini"></span></a>
-                                            <a href="#" class="woo-wishlist"><span class="flaticon-search flat-mini"></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail text-center">
-                                        <a href="#" class="product-link">
-                                            <h6 class="woocommerce-loop-product__title">Mens Band Collar Shirt</h6>
-                                        </a>
-                                        <span class="price">
-                                                <span class="woocommerce-Price-amount amount">$25.00</span>
-                                        </span>
-                                        <div class="star-rating">
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                            <i class="flaticon-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
+
                         </div>
                     </div>
                 </div>
