@@ -3,7 +3,7 @@
     <div class="logo-header" data-background-color="blue">
 
         <a href="{{ url('/admin/dashboard') }}" class="logo" style="color: white">
-            <img src="{{ asset('/')}}frontend/assets/img/footer-logo.png" alt="navbar brand" class="navbar-brand">
+            <p  alt="TailorApa" class="navbar-brand">TailorApa Admin </p>
         </a>
         <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">

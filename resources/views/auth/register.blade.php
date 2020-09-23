@@ -1,77 +1,68 @@
-@include('custom.header')
+@include('frontend.inc.header')
 
-			<!-- Page Content -->
-			<div class="content">
-				<div class="container-fluid">
+<!-- Page Content -->
+        <div id="page_wrapper">
+            <!-- Registration Section Start -->
+            <div class="full-row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 mb-5">
+                            <h3 class="mb-3 down-line">Welcome Message</h3>
+                            <p>Adipiscing lacinia pede proin vulputate habitasse donec adipiscing. Cubilia Interdum hac turpis et dignissim vehicula porta nostra dictum nostra semper. Dictumst congue dictum. Nam massa id, netus interdum amet Metus turpis scelerisque
+                                aptent sapien penatibus potenti.</p>
 
-					<div class="row">
-						<div class="col-md-8 offset-md-2">
+                            <h4 class="mb-5 mt-5 underline">Keep in a mind a few basic password roules :</h4>
+                            <ul class="list-squire-check">
+                                <li><span class="flaticon-checked-1 flat-small text-primary"></span> Change your passwords periodically</li>
+                                <li><span class="flaticon-checked-1 flat-small text-primary"></span> Avoid re-using password for multiple site</li>
+                                <li><span class="flaticon-checked-1 flat-small text-primary"></span> Use complex characters including uppercase and number</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5">
+                            <h3 class="mb-4 down-line">Registration</h3>
+                            <div class="form-icon-left form-boder">
+                                <form action="{{ route('register') }}" method="post">
+                                    @csrf
+                                    <div class="form-row">
+                                        <div class="col-md-12">
+                                            <label>Your Name</label>
+                                            <input type="text" class="form-control bg-light" name="name">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>Email Address</label>
+                                            <input type="email" name="email" class="form-control bg-light">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>Username</label>
+                                            <input type="text" name="username" class="form-control bg-light">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>PHN Number</label>
+                                            <input type="text" name="phn_number" class="form-control bg-light">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>Password</label>
+                                            <input type="password" name="password" class="form-control bg-light">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>Re-enter Password</label>
+                                            <input type="password" name="password_confirmation" class="form-control bg-light">
+                                        </div>
 
-							<!-- Register Content -->
-							<div class="account-content">
-								<div class="row align-items-center justify-content-center">
-									<div class="col-md-7 col-lg-6 login-left">
-										<img src="{{ asset('/') }}frontend/assets/img/login-banner.png" class="img-fluid" alt="Doccure Register">
-									</div>
-									<div class="col-md-12 col-lg-6 login-right">
-										<div class="login-header">
-											<h3> Are You Client  ?</h3>
+                                        <div class="col-md-12 form-check">
+                                            <button type="submit" class="btn btn-primary-fixed mb-3">Sign Up!</button>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <a href="#" class="btn-link text-dark">View Terms and Condition</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Registration Section End -->
+        </div>
 
-                                         @if (count($errors)>0)
-                                             <ul>
-                                                 @foreach($errors->all() as $error)
-                                                     <li class="alert alert-danger">{{ $error }}</li>
-                                                     @endforeach
-                                             </ul>
-                                         @endif
-										</div>
-
-										<!-- Register Form -->
-                                    <form action="{{ route('register') }}" method="POST">
-                                        @csrf
-											<div class="form-group form-focus">
-												<input type="text" name="name" class="form-control floating">
-                                                <label class="focus-label">Name</label>
-											</div>
-											<div class="form-group form-focus">
-												<input type="email" name="email" class="form-control floating">
-												<label class="focus-label">Email</label>
-											</div>
-											<div class="form-group form-focus">
-												<input type="text" name="phn_number" class="form-control floating">
-												<label class="focus-label">PHN Number</label>
-											</div>
-										    <div class="form-group form-focus">
-												<input type="text" name="username" class="form-control floating">
-												<label class="focus-label">Username</label>
-											</div>
-											<div class="form-group form-focus">
-												<input type="password" name="password" class="form-control floating">
-												<label class="focus-label">Create Password</label>
-											</div>
-											<div class="form-group form-focus">
-												<input type="password" name="password_confirmation" class="form-control floating">
-												<label class="focus-label">Confirm Password</label>
-											</div>
-											<div class="text-right">
-												<a class="forgot-link" href="{{ url('/login') }}">Already have an account?</a>
-											</div>
-											<button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Signup</button>
-
-										</form>
-										<!-- /Register Form -->
-
-									</div>
-								</div>
-							</div>
-							<!-- /Register Content -->
-
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-			<!-- /Page Content -->
-
-@include('custom.footer')
+@include('frontend.inc.footer')
