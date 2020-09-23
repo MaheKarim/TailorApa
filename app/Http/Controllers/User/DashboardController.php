@@ -17,4 +17,9 @@ class DashboardController extends Controller
         $product_bookings = ProductBooking::where('user_id', Auth::id())->get();
        return view('backend.multi-dashboard.user._home_user', compact('bookings', 'product_bookings'));
     }
+
+    public function custom_booking()
+    {
+        return view('backend.multi-dashboard.user._custom_booking');
+    }
 }

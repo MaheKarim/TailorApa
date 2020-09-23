@@ -47,9 +47,16 @@
                         </ul>
                     </div>
                     <div class="col-lg-6 py-2">
-                        <ul class="nav-bar-top right list-color-white d-flex">
-                            <li><a href="{{ route('register') }}">Registration</a></li>
-                            <li><a href="{{ route('login') }}">Login</a></li>
+                        @if (!Auth::check())
+                            <ul class="nav-bar-top right list-color-white d-flex">
+                                <li><a href="{{ route('register') }}">Registration</a></li>
+                                <li><a href="{{ route('login') }}">Login</a></li>
+
+
+                        @endif
+                            @auth
+                            <li><a href="{{ route('user.dashboard') }}">DashBoard</a></li>
+                            @endauth
 
                         </ul>
                     </div>

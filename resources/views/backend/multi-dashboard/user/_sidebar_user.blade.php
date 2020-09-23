@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">
+                    <a href="{{ route('customBooking') }}">
                         <i class="fas fa-user-shield"></i>
                         <p>Custom Order</p>
                     </a>

@@ -86,7 +86,9 @@ Route::group([
 */
 Route::group(['as'=>'user.' ,'prefix' => 'user', 'namespace' => 'User', 'middleware' =>['auth', 'user']], function() {
     Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+
 });
+Route::get('custom_booking','CustomOrderController@index')->name('customBooking');
 
 /*
 |--------------------------------------------------------------------------

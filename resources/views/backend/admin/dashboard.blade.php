@@ -77,7 +77,7 @@
     </div>
    <!--   Data Table Add -->
     <div class="row">
-        
+
         <div class="col-sm-6 col-md-3">
             <div class="card card-stats card-round">
                 <div class="card-body ">
@@ -136,18 +136,20 @@
         <!-- Notification End Here -->
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Appointment List</h4>
+                    <h4 class="card-title">Custom Order List</h4>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table id="basic-datatables" class="display table table-striped table-hover" >
                             <thead>
                             <tr>
-                                <th>Patient Name</th>
-                                <th>Doctor Name</th>
-                                <th>Category</th>
-                                <th>Appointment date</th>
-                                <th>User PHN No</th>
+                                <th>Customer Name</th>
+                                <th>Body Size</th>
+                                <th>Chest  Size</th>
+                                <th>Neck Size</th>
+                                <th>Sleeve Size</th>
+                                <th>Pant  Size</th>
+                                <th>Waist Size</th>
                                 <th>Status</th>
                                 <th>Action</th>
                                 <th>Delete</th>
