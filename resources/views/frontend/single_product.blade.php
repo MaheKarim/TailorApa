@@ -107,13 +107,18 @@
                                     </span>
                             <br>
                             <br>
-                            <form class="cart" method="post" action="#">
 
+                                @auth
                                 <div class="mb-4">
 
-                                    <button class="btn btn-secondary py-0 rounded-0" name="buy_now" value="">Buy Now</button>
+                                    <a class="btn btn-secondary py-0 rounded-0" href="{{ route('productBooking', $product->id) }}" value="">Buy Now</a>
                                 </div>
-                            </form>
+                                    @endauth
+                                    @if (!Auth::check())
+
+                                        <span style="background-color: aqua">To book this Product, You have to login!</span>
+                                    @endif
+
 
                         </div>
                         <div class="woocommerce-tabs wc-tabs-wrapper">
