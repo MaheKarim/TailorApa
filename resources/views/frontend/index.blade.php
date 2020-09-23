@@ -78,7 +78,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 mb-5">
-                        <h2 class="mb-4 line-title text-secondary position-relative">Why Choose Me</h2>
+                        <h2 class="mb-4 line-title text-secondary position-relative">Why Choose US </h2>
                         <span>Fermentum torquent gravida odio a varius gravida ac velit. Erat penatibus dolor interdum. Habitant. Nulla conubia, etiam netus a dapibus cum.</span>
                     </div>
                 </div>
@@ -152,73 +152,7 @@
 
 
 
-		<!-- Pricing Table Start -->
-		<div class="full-row bg-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 mb-5">
-						<span class="text-primary pb-2 d-table m-auto">Plans and Pricing</span>
-						<h2 class="main-title down-line w-50 mx-auto mb-4 text-center w-sm-100">Costing for Men's Coats</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<div class="thumb-line bg-white hover-shadow p-35 transation mb-4">
-							<div class="text-center"><span class="h2 text-primary"><sup>$</sup>145</span></div>
-							<h5 class="py-3 text-center">Blazer Coat</h5>
-							<hr>
-							<ul class="text-center mb-3">
-								<li>7 Days maximum time</li>
-								<li>1 free wash</li>
-							</ul>
-							<a href="#" class="btn btn-primary hover-bg-secondary w-100">Get Started</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="thumb-line bg-white hover-shadow p-35 transation mb-4">
-							<div class="text-center"><span class="h2 text-primary"><sup>$</sup>210</span></div>
-							<h5 class="py-3 text-center">Prince Coat</h5>
-							<hr>
-							<ul class="text-center mb-3">
-								<li>10 Days maximum time</li>
-								<li>2 free wash</li>
-							</ul>
-							<a href="#" class="btn btn-primary hover-bg-secondary w-100">Get Started</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="thumb-line bg-white hover-shadow p-35 transation mb-4">
-							<div class="text-center"><span class="h2 text-primary"><sup>$</sup>350</span></div>
-							<h5 class="py-3 text-center">Complete Suits</h5>
-							<hr>
-							<ul class="text-center mb-3">
-								<li>15 Days maximum time</li>
-								<li>5 free wash</li>
-							</ul>
-							<a href="#" class="btn btn-primary hover-bg-secondary w-100">Get Started</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="thumb-line bg-white hover-shadow p-35 transation mb-4">
-							<div class="text-center"><span class="h2 text-primary"><sup>$</sup>480</span></div>
-							<h5 class="py-3 text-center">Long Coat</h5>
-							<hr>
-							<ul class="text-center mb-3">
-								<li>1 Month maximum time</li>
-								<li>5 free wash</li>
-							</ul>
-							<a href="#" class="btn btn-primary hover-bg-secondary w-100">Get Started</a>
-						</div>
-					</div>
-					<div class="col-lg-12">
-						<div class="mt-5 w-25 w-sm-100 mx-auto text-center">
-							<p>Need a bigger plan? No problem get in touch and well discuss your exact requirement</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Pricing Table End -->
+
 
 		<!-- Message Table Start -->
 		<div class="full-row">

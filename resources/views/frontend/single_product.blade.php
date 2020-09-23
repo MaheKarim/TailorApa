@@ -105,13 +105,34 @@
                                 <br>
                                     <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{ $product->package_rate }}</span></ins>
                                     </span>
+                            <br>
+                            <br>
+                            <form class="cart" method="post" action="#">
 
+                                <div class="mb-4">
+
+                                    <button class="btn btn-secondary py-0 rounded-0" name="buy_now" value="">Buy Now</button>
+                                </div>
+                            </form>
 
                         </div>
+                        <div class="woocommerce-tabs wc-tabs-wrapper">
+                            <ul class="nav nav-tabs wc-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</a>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active woocommerce-Tabs-panel woocommerce-Tabs-panel--description" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                                    <p>{{ $product->description }}</p>
+
+                                </div>
 
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
