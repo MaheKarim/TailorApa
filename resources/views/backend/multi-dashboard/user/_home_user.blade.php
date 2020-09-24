@@ -34,7 +34,7 @@
                 @foreach($bookings as $booking)
                     <tr>
                         <td>{{$booking->User->name}}</td>
-                        
+
                         <td>{{ $booking->get_doctor_details->Category->category_name }}</td>
                         <td>{{ $booking->get_doctor_details->Area->area_name }}</td>
                         <td> {{ $booking->created_at->format('jS F Y') }}</td>
