@@ -22,8 +22,8 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th scope="col">Patient Name</th>
-                    <th scope="col"> Name</th>
+                    <th scope="col">User Name</th>
+
                     <th scope="col">Department</th>
                     <th scope="col">Area</th>
                     <th scope="col">Req Date</th>
@@ -34,7 +34,7 @@
                 @foreach($bookings as $booking)
                     <tr>
                         <td>{{$booking->User->name}}</td>
-                        <td>{{$booking->get_doctor_info->name }}</td>
+                        
                         <td>{{ $booking->get_doctor_details->Category->category_name }}</td>
                         <td>{{ $booking->get_doctor_details->Area->area_name }}</td>
                         <td> {{ $booking->created_at->format('jS F Y') }}</td>
