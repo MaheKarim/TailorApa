@@ -20,7 +20,7 @@
                     <i class="flaticon-right-arrow"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Forms</a>
+                    <a href="#">Product Page</a>
                 </li>
 
             </ul>
@@ -56,19 +56,19 @@
                         <form action="{{ url('store-product') }}" method="POST" enctype="multipart/form-data">
                                  @csrf
                                 <div class="form-group">
-                                    <label for="text">Add Shop Name</label>
+                                    <label for="text">Add Product Name</label>
                                     <input type="text" class="form-control" name="product_name" id="title" onkeyup="urlGen()" placeholder="Enter Product Name">
-                                    <label for="text">Product Sug</label>
+                                    <label for="text">Product Slug</label>
                                     <input type="text" class="form-control" name="product_slug" id="url"  placeholder="Enter Product Slug">
 
                                     <label for="text">Add Product Description</label>
                                     <textarea id="description" type="text" class="form-control" name="description" id="text" placeholder="Product Description"></textarea>
 
-                                    <label for="text">Total Rate</label>
-                                    <input type="text" class="form-control" name="total_rate" id="text" placeholder="Total Rate">
+                                    <label for="text">Regular Price</label>
+                                    <input type="text" class="form-control" name="total_rate" id="text" placeholder="Regular Price">
 
-                                    <label for="text">Package Rate</label>
-                                    <input type="text" class="form-control" name="package_rate" id="text" placeholder="Package Rate">
+                                    <label for="text">Discount Price</label>
+                                    <input type="text" class="form-control" name="package_rate" id="text" placeholder="Discount Price">
                                     <label for="text">Choose Product Image</label>
                                    <input type="file" class="form-control" name="package_image">
                                 </div>
