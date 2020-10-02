@@ -1,4 +1,4 @@
-@include('custom.header')
+@include('frontend.inc.header')
 <!-- Start sell products -->
 <section class="sell-products">
     <div class="container">
@@ -35,4 +35,4 @@
     </div>
 </section>
 <!-- End sell products -->
-@include('custom.footer')
+@include('frontend.inc.footer')

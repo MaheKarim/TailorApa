@@ -131,7 +131,7 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active woocommerce-Tabs-panel woocommerce-Tabs-panel--description" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                                    <p>{{ $product->description }}</p>
+                                    <p>{!! $product->description !!}</p>
 
                                 </div>
 

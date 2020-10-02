@@ -1,4 +1,38 @@
-@include('custom.header')
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Axeman - Tailoring and Fashion HTML Template">
+    <meta name="author" content="unicoder">
+    <title>TailorApa - Pionering Tailoring and Fashion Website in Bangladesh</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{  asset('/') }}frontend/assets/images/favicon.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&amp;display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600&amp;display=swap" rel="stylesheet">
+
+    <!--  CSS Style -->
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/all.min.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/animate.min.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/webfonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/layerslider.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/template.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/style.css">
+    <link rel="stylesheet" href="{{  asset('/') }}frontend/assets/css/category/category-three.css" id="color-change">
+
+</head>
+
 
 <!-- Breadcrumb -->
 <div class="breadcrumb-bar">
@@ -7,7 +41,7 @@
             <div class="col-md-12 col-12">
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                        <li class="breadcrumb-item"><a href="্রেে">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Product Booking</li>
                     </ol>
                 </nav>
@@ -46,5 +80,4 @@
     </div>
 </div>
 <!-- /Page Content -->
-
-@include('custom.footer')
+@include('frontend.inc.footer')

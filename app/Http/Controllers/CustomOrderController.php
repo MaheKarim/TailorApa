@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\CustomOrder;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CustomOrderController extends Controller
 {
@@ -36,7 +37,19 @@ class CustomOrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $customOrders = new CustomOrder();
+
+        $customOrders->user_id = Auth::id();
+        $customOrders->body_size = $request->body_size;
+        $customOrders->chest_size = $request->chest_size;
+        $customOrders->neck_size = $request->neck_size;
+        $customOrders->sleeve_size = $request->sleeve_size;
+        $customOrders->pant_size = $request->pant_size;
+        $customOrders->waist_size = $request->waist_size;
+
+        $customOrders->save();
+
+        return redirect(route('user.dashboard'));
     }
 
     /**

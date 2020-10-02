@@ -20,38 +20,38 @@
 
 
                             <!-- Notification End Here -->
-                                <form action="#" method="POST">
+                                <form action="{{ route('OrdercustomBooking') }}" method="POST">
                                     <!--  -->
                                     @csrf
                                     <div class="form-group">
                                         <label for="text">Body Size</label>
-                                        <input type="text" class="form-control" name="body_size" id="text" placeholder="Enter Body Size">
+                                        <input type="text" class="form-control" name="body_size" id="text" value="{{ old('body_size') }}" placeholder="Enter Body Size">
                                     </div>
                                     <div class="form-group">
                                         <label for="text">Chest Size</label>
-                                        <input type="text" class="form-control" name="chest_size" id="text" placeholder="Enter Chest Size">
+                                        <input type="text" class="form-control" name="chest_size" id="text" value="{{ old('chest_size') }}" placeholder="Enter Chest Size">
                                     </div>
                                     <div class="form-group">
                                         <label for="text">Neck Size</label>
-                                        <input type="text" class="form-control" name="neck_size" id="text" placeholder="Enter Neck Size">
+                                        <input type="text" class="form-control" name="neck_size" id="text" value="{{ old('neck_size') }}" placeholder="Enter Neck Size">
                                     </div>
                                     <div class="form-group">
                                         <label for="text">Sleeve Size</label>
-                                        <input type="text" class="form-control" name="sleeve_size" id="text" placeholder="Enter Sleeve Size">
+                                        <input type="text" class="form-control" name="sleeve_size" id="text" value="{{ old('sleeve_size') }}" placeholder="Enter Sleeve Size">
                                     </div>
                                     <div class="form-group">
                                         <label for="text">Pant / Payjama Size</label>
-                                        <input type="text" class="form-control" name="pant_size" id="text" placeholder="Enter Pant Size">
+                                        <input type="text" class="form-control" name="pant_size" id="text" value="{{ old('pant_size') }}" placeholder="Enter Pant Size">
                                     </div>
                                     <div class="form-group">
                                         <label for="text">Waist Size</label>
-                                        <input type="text" class="form-control" name="waist_size" id="text" placeholder="Enter Waist Size">
+                                        <input type="text" class="form-control" name="waist_size" id="text" value="{{ old('waist_size') }}" placeholder="Enter Waist Size">
                                     </div>
                             </div>
                         </div>
                         <div class="card-action">
                             <button class="btn btn-success">Submit</button>
-                            <a href="#" class="btn btn-danger">Cancel</a>
+                            <a href="{{ route('user.dashboard') }}" class="btn btn-danger">Cancel</a>
                         </div>
                         </form>
                     </div>

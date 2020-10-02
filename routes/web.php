@@ -89,6 +89,7 @@ Route::group(['as'=>'user.' ,'prefix' => 'user', 'namespace' => 'User', 'middlew
 
 });
 Route::get('custom_booking','CustomOrderController@index')->name('customBooking');
+Route::post('custom_order','CustomOrderController@store')->name('OrdercustomBooking');
 
 /*
 |--------------------------------------------------------------------------
