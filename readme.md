@@ -19,23 +19,6 @@
 
 
 
-Another For Profile Update <br>
-![Doctor Panel 1](https://user-images.githubusercontent.com/16819523/75205343-bb2d1f80-579d-11ea-8a4a-39d6320a3402.png)
-
-- Doctor Search Option: 
-![DS](https://user-images.githubusercontent.com/16819523/75205839-0c89de80-579f-11ea-9be7-84a68f138b80.png)
-
-Doctor Profile / URL : 
-![Personal Profile](https://user-images.githubusercontent.com/16819523/75206494-c33a8e80-57a0-11ea-8267-b20fb04545a3.png)
-
-
-## User Dashboard
-
-![User](https://user-images.githubusercontent.com/16819523/75206065-be290f80-579f-11ea-95cf-85a189b27ae1.PNG)
-
-## Home Page
-![Home Page](https://user-images.githubusercontent.com/16819523/75207427-e2d2b680-57a2-11ea-8191-45bf3b139d5f.png)
-
 
 ## Security Vulnerabilities
 
