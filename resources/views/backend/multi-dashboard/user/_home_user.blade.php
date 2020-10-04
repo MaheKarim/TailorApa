@@ -17,6 +17,34 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
+                <h3 align="center" style="background-color: #81ecec">Product Making Price</h3>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Minimum Tailoring Price</th>
+                    <th scope="col">Minimum Making Day</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach($prices as $price)
+                    <tr>
+                        <td>{{$price->dress_name}}</td>
+                        <td>{{ $price->dress_price }}</td>
+                        <td>{{ $price->dress_making_day }}</td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+</div><div class="page-inner mt--20 col-md-12">
+  <div class="row mt--9">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
                 <h3 align="center" style="background-color: #0de0fe"> Custom Order Status Table</h3>
             </div>
             <table class="table">
@@ -67,8 +95,8 @@
                         <tr>
 
                             <th scope="col">Product Name</th>
-                            <th scope="col">Total Rate</th>
-                            <th scope="col">Package Rate</th>
+                            <th scope="col">Product Price</th>
+                            <th scope="col">Discount Price</th>
                             <th scope="col">Req Date</th>
                             <th scope="col">Status</th>
                         </tr>

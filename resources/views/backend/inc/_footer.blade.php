@@ -5,7 +5,7 @@
             </ul>
         </nav>
         <div class="copyright ml-auto">
-            {{ now()->year }} | Made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.about.me/mahekarim">Mahe Karim</a>
+            {{ now()->year }} | Made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.about.me/mahekarim">Admina Admin Template</a>
         </div>
     </div>
 </footer>
