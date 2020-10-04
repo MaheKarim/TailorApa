@@ -4,12 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Booking;
 use App\Doctor;
-// use App\DoctorContact;
 use App\Exports\DoctorsExport;
 use App\Exports\NurseExport;
 use App\ProductBooking;
 use App\User;
-use App\ContactForm;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Exports\UserExports;
@@ -24,8 +23,6 @@ class DashboardController extends Controller
         $data = [ ];
         $data['booking_all'] = Booking::orderBy('created_at', 'desc')->get();
         $data['product_bookings'] = ProductBooking::all();
-        $data['mails'] = ContactForm::orderBy('created_at', 'desc')->get();
-       // $data['doctors_contact'] = DoctorContact::latest()->get();
 
         return view('backend.admin.dashboard', $data);
     }
