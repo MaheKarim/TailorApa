@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Booking;
-use App\Doctor;
-use App\Exports\DoctorsExport;
-use App\Exports\NurseExport;
+
+use App\CustomOrder;
 use App\ProductBooking;
 use App\User;
-
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Exports\UserExports;
@@ -21,7 +18,7 @@ class DashboardController extends Controller
     public function index()
     {
         $data = [ ];
-        $data['booking_all'] = Booking::orderBy('created_at', 'desc')->get();
+        $data['booking_all'] = CustomOrder::orderBy('created_at', 'desc')->get();
         $data['product_bookings'] = ProductBooking::all();
 
         return view('backend.admin.dashboard', $data);

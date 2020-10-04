@@ -47,6 +47,10 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Booking');
     }
+    public function Custom ()
+    {
+        return $this->hasMany('App\CustomOrder', 'user_id', 'id');
+    }
 
     public function Doctor()
     {

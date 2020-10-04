@@ -65,7 +65,7 @@ Route::group([
     Route::get('/product/edit/status/{id}','ProductBookingController@edit')->name('editStatus.productBooking');
     Route::post('update/product_booking/status','ProductBookingController@update')->name('update.ProductBooking');
 
-    Route::get('/status-change/{id}','BookingController@statusChangeForBooking')->name('statusChangePage');
+    //Route::get('','BookingController@')->name('');
     Route::post('status_change','BookingController@bookingStatusStore')->name('statusChangeOpt');
     Route::get('/booking/delete/{id}', 'BookingController@delete')->name('bookingDelete');
 
@@ -90,6 +90,7 @@ Route::group(['as'=>'user.' ,'prefix' => 'user', 'namespace' => 'User', 'middlew
 });
 Route::get('custom_booking','CustomOrderController@index')->name('customBooking');
 Route::post('custom_order','CustomOrderController@store')->name('OrdercustomBooking');
+Route::get('/status-change/{id}', 'CustomOrderController@statusChangeForBooking')->name('statusChangePage');
 
 /*
 |--------------------------------------------------------------------------

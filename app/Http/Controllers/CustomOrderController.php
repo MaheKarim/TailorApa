@@ -24,9 +24,11 @@ class CustomOrderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+      public function statusChangeForBooking($id)
     {
-        //
+        $data = [ ];
+        $data['bookings'] = CustomOrder::find($id);
+        return view('backend.booking.change_status', $data);
     }
 
     /**
@@ -37,8 +39,8 @@ class CustomOrderController extends Controller
      */
     public function store(Request $request)
     {
-        $customOrders = new CustomOrder();
 
+        $customOrders = new CustomOrder();
         $customOrders->user_id = Auth::id();
         $customOrders->body_size = $request->body_size;
         $customOrders->chest_size = $request->chest_size;
@@ -46,7 +48,6 @@ class CustomOrderController extends Controller
         $customOrders->sleeve_size = $request->sleeve_size;
         $customOrders->pant_size = $request->pant_size;
         $customOrders->waist_size = $request->waist_size;
-
         $customOrders->save();
 
         return redirect(route('user.dashboard'));

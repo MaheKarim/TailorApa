@@ -144,11 +144,12 @@
                             <thead>
                             <tr>
                                 <th>Customer Name</th>
+                                <th>Customer PHN NO</th>
                                 <th>Body Size</th>
-                                <th>Chest  Size</th>
+                                <th>Chest Size</th>
                                 <th>Neck Size</th>
                                 <th>Sleeve Size</th>
-                                <th>Pant  Size</th>
+                                <th>Pant Size</th>
                                 <th>Waist Size</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -162,11 +163,15 @@
                 @foreach($booking_all  as $booking)
                             <tr>
                                 <td>{{ $booking->User->name }}</td>
-                                <td>{{ $booking->get_doctor_info->name }}</td>
-                               <td>{{ $booking->get_doctor_details->Category->category_name }}</td>
-                                <td>{{ $booking->created_at->format('jS F Y') }}</td>
                                 <td>{{ $booking->User->phn_number }}</td>
-                                <td>{!! $booking->Status->status_name !!}</td>
+                                <td>{{ $booking->body_size }}</td>
+                                <td>{{ $booking->chest_size }}</td>
+                                <td>{{ $booking->neck_size }}</td>
+                                <td>{{ $booking->sleeve_size }}</td>
+                                <td>{{ $booking->pant_size }}</td>
+                                <td>{{ $booking->waist_size }}</td>
+                                <td>{{ $booking->Status->status_name }}</td>
+
                                 <td>
                                     <a href="{{ route('statusChangePage', $booking->id )}}" type="button" class="btn btn-warning">Edit</a>
 
@@ -198,9 +203,9 @@
                         <table id="basic-datatables" class="display table table-striped table-hover" >
                             <thead>
                             <tr>
-                                <th>Buyer Name</th>
-                                <th>Buyer Email</th>
-
+                                <th>Customer Name</th>
+                                <th>Customer Email</th>
+                                <th>Customer PHN NO</th>
                                 <th>Product Name</th>
                                 <th>Product Package Price</th>
                                 <th>Booking Date</th>
@@ -214,7 +219,7 @@
                                 <tr>
                                     <td>{{ $productbooking->user->name }}</td>
                                     <td>{{ $productbooking->user->email }}</td>
-
+                                    <td>{{ $productbooking->user->phn_number }}</td>
                                     <td>{{ $productbooking->get_product_details->product_name }}</td>
                                     <td>{{ $productbooking->get_product_details->package_rate }}</td>
                                     <td>{{ $productbooking->created_at->format('jS F') }}</td>
