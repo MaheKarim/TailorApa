@@ -20,6 +20,7 @@ class BookingController extends Controller
 
         return view('frontend.booking_status',compact('settings'));
     }
+
     public function showbooking()
     {
       $bookings = Booking::where('user_id', Auth::id())->get();
@@ -28,25 +29,4 @@ class BookingController extends Controller
       return view('backend.multi-dashboard.user._home_user', compact('bookings','settings'));
     }
 
-
-
-    public function bookingStatusStore(Request $request)
-    {
-        // Validation Will Here
-        $bookings = Booking::findOrfail($request->id)->update([
-            'status' => $request->status
-        ]);
-
-        session()->flash('success','Successfully Updated!');
-        return redirect(route('admin.dashboard'));
-    }
-
-    public function delete($id)
-    {
-        $data = [ ];
-        $data['bookings'] = Booking::find($id);
-        $data['bookings']->delete();
-        session()->flash('success','Doctor Appointment Booking Deleted Successfully!');
-        return redirect(route('admin.dashboard'));
-    }
 }

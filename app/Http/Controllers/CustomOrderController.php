@@ -8,22 +8,14 @@ use Illuminate\Support\Facades\Auth;
 
 class CustomOrderController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
+
     public function index()
     {
 
         return view('backend.multi-dashboard.user._custom_booking');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
       public function statusChangeForBooking($id)
     {
         $data = [ ];
@@ -31,12 +23,7 @@ class CustomOrderController extends Controller
         return view('backend.booking.change_status', $data);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
 
@@ -53,48 +40,25 @@ class CustomOrderController extends Controller
         return redirect(route('user.dashboard'));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\CustomOrder  $customOrder
-     * @return \Illuminate\Http\Response
-     */
-    public function show(CustomOrder $customOrder)
+
+    public function bookingStatusStore(Request $request)
     {
-        //
+        // Validation Will Here
+        $bookings = CustomOrder::findOrfail($request->id)->update([
+            'status_name_id' => $request->status_name_id
+        ]);
+
+        session()->flash('success','Successfully Updated!');
+        return redirect(route('admin.dashboard'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\CustomOrder  $customOrder
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(CustomOrder $customOrder)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\CustomOrder  $customOrder
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, CustomOrder $customOrder)
+    public function delete($id)
     {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\CustomOrder  $customOrder
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(CustomOrder $customOrder)
-    {
-        //
+        $data = [ ];
+        $data['bookings'] = CustomOrder::find($id);
+        $data['bookings']->delete();
+        session()->flash('success','Custom Order Booking Deleted Successfully!');
+        return redirect(route('admin.dashboard'));
     }
 }

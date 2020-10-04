@@ -16,7 +16,7 @@
                         <div class="row">
                             <div class="col-md-4 col-lg-8">
 
-                                <form action="" method="POST">
+                                <form action="{{ route('statusChangeOpt') }}" method="POST">
                                     @csrf
 {{--                                    <div class="form-group">--}}
 {{--                                        <label for="text">Update Booking Status</label>--}}
