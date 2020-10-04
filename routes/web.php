@@ -65,10 +65,6 @@ Route::group([
     Route::get('/product/edit/status/{id}','ProductBookingController@edit')->name('editStatus.productBooking');
     Route::post('update/product_booking/status','ProductBookingController@update')->name('update.ProductBooking');
 
-    //Route::get('','BookingController@')->name('');
-   // Route::post('status_change','BookingController@bookingStatusStore')->name('statusChangeOpt');
-//    Route::get('/booking/delete/{id}', 'BookingController@delete')->name('bookingDelete');
-
 
     Route::get('/show/product','ProductController@index')->name('showProduct');
     Route::get('/add/product','ProductController@add')->name('addProduct');

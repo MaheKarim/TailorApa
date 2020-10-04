@@ -22,23 +22,30 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th scope="col">User Name</th>
-
-                    <th scope="col">Department</th>
-                    <th scope="col">Area</th>
-                    <th scope="col">Req Date</th>
+                    <th scope="col">Your Name</th>
+                    <th scope="col">Body Size</th>
+                    <th scope="col">Chest Size</th>
+                    <th scope="col">Neck Size</th>
+                    <th scope="col">Sleeve Size</th>
+                    <th scope="col">Pant Size</th>
+                    <th scope="col">Waist Size</th>
                     <th scope="col">Status</th>
+                    <th scope="col">Req Date</th>
+
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($bookings as $booking)
                     <tr>
                         <td>{{$booking->User->name}}</td>
-
-                        <td>{{ $booking->get_doctor_details->Category->category_name }}</td>
-                        <td>{{ $booking->get_doctor_details->Area->area_name }}</td>
-                        <td> {{ $booking->created_at->format('jS F Y') }}</td>
+                        <td>{{ $booking->body_size }}</td>
+                        <td>{{ $booking->chest_size }}</td>
+                        <td>{{ $booking->neck_size }}</td>
+                        <td>{{ $booking->sleeve_size }}</td>
+                        <td>{{ $booking->pant_size }}</td>
+                        <td>{{ $booking->waist_size }}</td>
                         <td>{!! $booking->Status->status_name !!}</td>
+                        <td> {{ $booking->created_at->format('jS F Y') }}</td>
                     </tr>
                 @endforeach
                 </tbody>
