@@ -44,7 +44,6 @@ Route::group(['as'=>'admin.' , 'prefix' => 'admin', 'namespace' => 'Admin', 'mid
     Route::post('settings-update','SiteSettingsController@store')->name('settings.store');
     Route::get('show/all_user','DashboardController@showAllUser')->name('showAllUser');
     Route::post('/export-user','DashboardController@exportUser')->name('export.onlyUser');
-
     Route::get('/delete/user/{id}', 'DashboardController@destroy')->name('deleteUser');
 
 });
@@ -74,6 +73,13 @@ Route::group([
     Route::get('/product/{productUrl}', 'ProductController@productSee')->name('productSee');
     Route::get('/product/edit/{product}','ProductController@edit')->name('editProduct');
     Route::post('/update/product','ProductController@update')->name('updateProduct');
+
+
+    Route::get('/show/products/making_price','MadePriceController@index')->name('makingPriceShow');
+    Route::get('/add/making_price','MadePriceController@add')->name('addPriceShow');
+    Route::post('store-productMakingPrice','MadePriceController@store')->name('storeDataPriceMaking');
+    Route::get('/product_making/delete/{id}','MadePriceController@delete')->name('deletePriceMaking');
+
 
 /*
 |--------------------------------------------------------------------------

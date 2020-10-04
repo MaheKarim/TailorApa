@@ -15,6 +15,9 @@ class CreateMadePricesTable extends Migration
     {
         Schema::create('made_prices', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('dress_name');
+            $table->string('dress_price');
+            $table->string('dress_making_day');
             $table->timestamps();
         });
     }

@@ -46,6 +46,14 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{ route('makingPriceShow') }}">
+                        <i class="fa fa-building"></i>
+                        <p>Product Making Price</p>
+
+                    </a>
+                </li>
+
                 <li class="nav-section">
                     <span class="sidebar-mini-icon">
                         <i class="fa fa-ellipsis-h"></i>
@@ -59,8 +67,6 @@
                             {{-- <span class="badge badge-success">4</span> --}}
                     </a>
                 </li>
-
-
                     <li class="nav-section">
                         <span class="sidebar-mini-icon">
                             <i class="fa fa-ellipsis-h"></i>
