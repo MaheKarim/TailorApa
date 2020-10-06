@@ -53,7 +53,7 @@
                                             <button type="submit" class="btn btn-primary-fixed mb-3">Sign Up!</button>
                                         </div>
                                         <div class="col-md-12">
-                                            <a href="#" class="btn-link text-dark">View Terms and Condition</a>
+                                            <a href="{{ url('login') }}" class="btn-link text-dark">Go to Login Page</a>
                                         </div>
                                     </div>
                                 </form>

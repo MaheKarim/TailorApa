@@ -30,8 +30,8 @@
                     <h4 class="widget-title mb-4">Important Links</h4>
                     <ul>
                         <li><a href="{{ url('/') }}">Home</a></li>
-                        <li><a href="#">Payment System</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="{{ url('login') }}">Login</a></li>
+                        <li><a href="{{ url('register') }}">Register</a></li>
                         <li><a href="#">Company History</a></li>
                         <li><a href="#">Consultation</a></li>
                     </ul>
